@@ -43,7 +43,6 @@ public class Tabela implements InterfaceTabela{
 
     /* Ordena a lista que funciona como classificação com base nos critérios determinados (pontos,
     vitórias, saldo de gols e gols feitos) e a exibe pro usuário. */
-
     public void exibirTabela () {
         times.sort(Comparator.comparing(Time::getPontos).thenComparing(Time::getVitorias)
                 .thenComparing(Time::getSaldoDeGols).thenComparing(Time::getGolsFeitos).reversed());
